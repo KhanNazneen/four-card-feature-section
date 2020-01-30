@@ -1,0 +1,77 @@
+/* FOMTS */
+@import url('https://fonts.googleapis.com/css?family=Poppins:200,400,700&display=swap');
+
+/* GLOBALS */
+:root {
+    /* PRIMARY COLORS */
+    --Red: hsl(0, 78%, 62%);
+    --Cyan: hsl(180, 62%, 55%);
+    --Orange: hsl(34, 97%, 64%);
+    --Blue: hsl(212, 86%, 64%);
+
+    /* NUETRAL COLORS */
+    --VeryDarkBlue: hsl(234, 12%, 34%);
+    --GrayishBlue: hsl(229, 6%, 66%);
+    --VeryLightGray: hsl(0, 0%, 98%);
+
+    /* FONTS */
+    --body-font: 'Poppins', sans-serif;
+    --body-font-weight: 400;
+}
+
+html {
+    font-size: 15px;
+    margin-top: 0;
+}
+
+body {
+    margin: 0;
+    padding: 0;
+    border: 0;
+
+    box-sizing: border-box;
+
+    background-color: var(--VeryLightGray);
+    font-family: var(--body-font);
+    font-weight: var(--body-font-weight);
+    color: var(--GrayishBlue);
+}
+
+h4, p {
+    margin: 0;
+    font-size: 15px;
+}
+
+h4 {
+    font-weight: 600;
+    color: #000000;
+    margin-bottom: 10px;
+}
+
+div > p {
+    font-weight: 200;
+    font-size: 12px;
+    margin-bottom: 40px;
+}
+
+.supervisor {
+    grid-area: supervisor;
+    /* justify-self: self-end; */
+    border-top: 4px solid var(--Cyan);
+}
+
+.team-builder {
+    grid-area: team-builder;
+    border-top: 4px solid var(--Red);
+}
+
+.karma {
+    grid-area: karma;
+    border-top: 4px solid var(--Orange);
+}
+
+.calculator {
+    grid-area: calculator;
+    /* justify-self: self-start; */
+    border-top: 4px solid var(--Blue);
+}

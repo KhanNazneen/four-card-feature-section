@@ -1,0 +1,21 @@
+@media (max-width: 375px) {
+    body {
+        overflow-x: hidden;
+        overflow-y: scroll;
+    }
+    header p, h1 {
+        font-size: 1.5rem;
+    }
+    header span {
+        width: 80%;
+    }
+
+    main {
+        margin: 50px auto;
+        grid-template-areas: "supervisor"
+                             "team-builder"
+                             "karma"
+                             "calculator";
+        justify-items: center;
+    }
+}
